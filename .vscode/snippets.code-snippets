@@ -1,0 +1,22 @@
+{
+	"Add change": {
+		"scope": "markdown",
+		"prefix": "change",
+		"body": [
+			"## Version $1",
+			"",
+			"**Message**:\\",
+			"$2",
+			"",
+			"**Description**:\\",
+			"$3",
+			"",
+			"**Changements** (.py uniquement):",
+			"",
+			"```diff",
+			"$0",
+			"```"
+		],
+		"description": "Add version change"
+	}
+}
