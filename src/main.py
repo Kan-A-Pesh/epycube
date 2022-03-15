@@ -2,61 +2,44 @@ import pygame
 from pygame.locals import *
 
 from OpenGL.GL import *
-from OpenGL.GLU import *
 
-verticies = (
-    (1, -1, -1),
-    (1, 1, -1),
-    (-1, 1, -1),
-    (-1, -1, -1),
-    (1, -1, 1),
-    (1, 1, 1),
-    (-1, -1, 1),
-    (-1, 1, 1)
-    )
-
-edges = (
-    (0,1),
-    (0,3),
-    (0,4),
-    (2,1),
-    (2,3),
-    (2,7),
-    (6,3),
-    (6,4),
-    (6,7),
-    (5,1),
-    (5,4),
-    (5,7)
-    )
-
-
-def drawCube():
-    glBegin(GL_LINES)
-    for edge in edges:
-        for vertex in edge:
-            glVertex3fv(verticies[vertex])
-    glEnd()
+from world import World
 
 def main():
-    pygame.init()
-    display = (800,600)
-    pygame.display.set_mode(display, DOUBLEBUF|OPENGL)
+	pygame.init ()
+	screen = pygame.display.set_mode ((800,600), pygame.OPENGL|pygame.DOUBLEBUF, 24)
+	glViewport (0, 0, 800, 600)
+	glClearColor (0.0, 0.0, 0.0, 1.0)
+	glEnableClientState (GL_VERTEX_ARRAY)
 
-    gluPerspective(45, (display[0]/display[1]), 0.1, 50.0)
+	vbo = glGenBuffers(1)
+	glBindBuffer(GL_ARRAY_BUFFER, vbo)
 
-    glTranslatef(0.0,0.0, -5)
+	world = World()
 
-    while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                quit()
+	while True:
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				pygame.quit()
+				quit()
+			if event.type == pygame.KEYDOWN:
+				world.verts = [
+					0.0, 0.5, 0.0,
+					-0.5, -0.5, 0.0,
+					0.5, -0.5, 0.0
+				]
+				world.refresh()
 
-        glRotatef(1, 3, 1, 1)
-        glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
-        drawCube()
-        pygame.display.flip()
-        pygame.time.wait(10)
+		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
+
+		glBindBuffer(GL_ARRAY_BUFFER, vbo)
+		glVertexPointer(3, GL_FLOAT, 0, None)
+		
+		world.render()
+
+		glDrawArrays (GL_TRIANGLES, 0, 3)
+		
+		pygame.display.flip()
+		pygame.time.wait(10)
 
 main()
