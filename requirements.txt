@@ -1,3 +1,4 @@
 pygame==2.1.2
 PyOpenGL==3.1.6
 perlin_noise==1.12
+pyrr==0.10.3
