@@ -3,6 +3,7 @@ from numpy import matrix, ndarray
 
 from pygame import Vector2, Vector3
 from pyrr import *
+from numpy import *
 
 class Camera3D:
 
@@ -14,10 +15,12 @@ class Camera3D:
 
 	def getForward(self) -> Vector3:
 		r = self.rotation
-		c = Vector2(cos(r.x), cos(r.y))
-		s = Vector2(sin(r.x), sin(r.y))
+		c = (cos(r.x), cos(r.y))
+		s = (sin(r.x), sin(r.y))
 
-		return Vector3(-s.x * abs(c.y), s.y, -c.x * abs(c.y))
+		fwd = (-s[0] * abs(c[1]), s[1], -c[0] * abs(c[1]))
+		
+		return Vector3(fwd)
 
 	def getRight(self) -> Vector3:
 		return Vector3.normalize(Vector3.cross(Vector3(0,1,0), -self.getForward()))
@@ -32,4 +35,4 @@ class Camera3D:
 		trans = matrix44.create_from_translation(self.position)
 		rot = matrix44.create_from_eulers(self.rotation)
 
-		return matrix44.inverse(rot * trans)
+		return linalg.inv(matmul(rot, trans))

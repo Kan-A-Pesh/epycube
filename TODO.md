@@ -37,9 +37,13 @@ Voici les différentes étapes de l'avancement du jeu, ainsi que la conventions 
 |❌| Texturer un mesh | Basse (2) | 03/14/2022 | N/A |
 |❌| Générer un atlas à partir de textures | Basse (2) | 03/14/2022 | N/A |
 |❌| Texturer indépendamment les faces | Basse (2) | 03/14/2022 | N/A |
-|❌| Créer un shader (diffuse) | Normale (3) | 03/16/2022 | N/A |
-|🎯| Créer une classe Shader | Normale (3) | 03/16/2022 | N/A |
-|❌| Charger les shader a l'aide de la classe | Normale (3) | 03/16/2022 | N/A |
+|✅| Créer un shader (diffuse) | Normale (3) | 03/16/2022 | 03/17/2022 |
+|✅| Créer une classe Shader | Normale (3) | 03/16/2022 | 03/17/2022 |
+|✅| Charger les shader a l'aide de la classe | Normale (3) | 03/16/2022 | 03/17/2022 |
+|✅| Créer une caméra | Normale (3) | 03/17/2022 | 03/17/2022 |
+|🤚| Contrôler la caméra | Normale (3) | 03/17/2022 | 03/17/2022 |
+|🎯| Créer une classe Transform | Haute (4) | 03/17/2022 | N/A |
+|❌| Lumière directionnel | Normale (3) | 03/17/2022 | N/A |
 
 ### Autres
 
