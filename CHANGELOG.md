@@ -1,9 +1,26 @@
 # Journal de changements
 
+## Version 0.0.3
+
+**Message**:\
+`🎄 added chunks perlin noise generation`
+
+**Description**:\
+Ajout de tronçons (par defaut 16x16x16 cubes) et génération procédurale par bruit de Perlin.
+
+**Changements** (.py uniquement):
+
+```diff
++ src/chunk.py
+- src/cube.py
++ src/noise.py
++ src/main.py
+```
+
 ## Version 0.0.2
 
 **Message**:\
-🧊 added a cube
+`🧊 added a cube`
 
 **Description**:\
 Ajout d'un cube avec des faces.
@@ -19,7 +36,7 @@ Ajout d'un cube avec des faces.
 ## Version 0.0.1
 
 **Message**:\
-🎥 added a triangle and camera
+`🎥 added a triangle and camera`
 
 **Description**:\
 Ajout d'un triangle et d'une caméra controllable
@@ -33,7 +50,7 @@ Ajout d'un triangle et d'une caméra controllable
 ## Version 0.0.0 (restart)
 
 **Message**:\
-✨ first commit
+`✨ first commit`
 
 **Description**:\
 Ajout d'une fenêtre et de fichiers informatifs tel que `CHANGELOG.md`, `TODO.md` et `README.md`.\
