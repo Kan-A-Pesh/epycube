@@ -32,8 +32,8 @@ Voici les différentes étapes de l'avancement du jeu, ainsi que la conventions 
 |✅| Afficher un triangle | Normale (3) | 03/14/2022 | 03/18/2022 |
 |✅| Afficher une face | Normale (3) | 03/14/2022 | 03/18/2022 |
 |✅| Afficher un cube | Normale (3) | 03/14/2022 | 03/18/2022 |
-|❌| Afficher plusieurs cubes | Normale (3) | 03/14/2022 | N/A |
-|❌| Afficher une matrice de cubes | Normale (3) | 03/14/2022 | N/A |
+|✅| Afficher plusieurs cubes | Normale (3) | 03/14/2022 | 03/18/2022 |
+|✅| Afficher une matrice de cubes | Normale (3) | 03/14/2022 | 03/18/2022 |
 |❌| Texturer un mesh | Basse (2) | 03/14/2022 | N/A |
 |❌| Générer un atlas à partir de textures | Basse (2) | 03/14/2022 | N/A |
 |❌| Texturer indépendamment les faces | Basse (2) | 03/14/2022 | N/A |
@@ -43,7 +43,7 @@ Voici les différentes étapes de l'avancement du jeu, ainsi que la conventions 
 |✅| Créer une caméra | Normale (3) | 03/17/2022 | 03/18/2022 |
 |✅| Contrôler la caméra | Normale (3) | 03/17/2022 | 03/18/2022 |
 |❌| Créer une classe Transform | Normale (3) | 03/17/2022 | N/A |
-|❌| Lumière directionnel | Normale (3) | 03/17/2022 | N/A |
+|✅| Lumière directionnel | Normale (3) | 03/17/2022 |  03/18/2022 |
 
 ### Autres
 
