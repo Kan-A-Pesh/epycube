@@ -28,8 +28,8 @@ Voici les différentes étapes de l'avancement du jeu, ainsi que la conventions 
 
 | Status | Etape | Priorité | Date de création | Date de réalisation |
 | :----: | :---- | :------: | :--------------: | :-----------------: |
-|✅| Ouvrir une fenêtre | Normale (3) | 03/14/2022 | N/A |
-|❌| Afficher un triangle | Normale (3) | 03/14/2022 | N/A |
+|✅| Ouvrir une fenêtre | Normale (3) | 03/14/2022 | 03/18/2022 |
+|✅| Afficher un triangle | Normale (3) | 03/14/2022 | 03/18/2022 |
 |❌| Afficher une face | Normale (3) | 03/14/2022 | N/A |
 |❌| Afficher un cube | Normale (3) | 03/14/2022 | N/A |
 |❌| Afficher plusieurs cubes | Normale (3) | 03/14/2022 | N/A |
@@ -40,8 +40,8 @@ Voici les différentes étapes de l'avancement du jeu, ainsi que la conventions 
 |❌| Créer un shader (diffuse) | Normale (3) | 03/16/2022 | N/A |
 |❌| Créer une classe Shader | Normale (3) | 03/16/2022 | N/A |
 |❌| Charger les shader a l'aide de la classe | Normale (3) | 03/16/2022 | N/A |
-|❌| Créer une caméra | Normale (3) | 03/17/2022 | N/A |
-|❌| Contrôler la caméra | Normale (3) | 03/17/2022 | N/A |
+|✅| Créer une caméra | Normale (3) | 03/17/2022 | 03/18/2022 |
+|✅| Contrôler la caméra | Normale (3) | 03/17/2022 | 03/18/2022 |
 |❌| Créer une classe Transform | Normale (3) | 03/17/2022 | N/A |
 |❌| Lumière directionnel | Normale (3) | 03/17/2022 | N/A |
 
