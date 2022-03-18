@@ -30,8 +30,8 @@ Voici les différentes étapes de l'avancement du jeu, ainsi que la conventions 
 | :----: | :---- | :------: | :--------------: | :-----------------: |
 |✅| Ouvrir une fenêtre | Normale (3) | 03/14/2022 | 03/18/2022 |
 |✅| Afficher un triangle | Normale (3) | 03/14/2022 | 03/18/2022 |
-|❌| Afficher une face | Normale (3) | 03/14/2022 | N/A |
-|❌| Afficher un cube | Normale (3) | 03/14/2022 | N/A |
+|✅| Afficher une face | Normale (3) | 03/14/2022 | 03/18/2022 |
+|✅| Afficher un cube | Normale (3) | 03/14/2022 | 03/18/2022 |
 |❌| Afficher plusieurs cubes | Normale (3) | 03/14/2022 | N/A |
 |❌| Afficher une matrice de cubes | Normale (3) | 03/14/2022 | N/A |
 |❌| Texturer un mesh | Basse (2) | 03/14/2022 | N/A |
