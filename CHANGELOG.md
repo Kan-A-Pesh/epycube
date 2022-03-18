@@ -1,4 +1,20 @@
-# Journal de changementsin.py
+# Journal de changements
+
+## Version 0.0.2
+
+**Message**:\
+🧊 added a cube
+
+**Description**:\
+Ajout d'un cube avec des faces.
+
+**Changements** (.py uniquement):
+
+```diff
++ src/cube.py
++ src/face.py
++ src/main.py
+```
 
 ## Version 0.0.1
 
