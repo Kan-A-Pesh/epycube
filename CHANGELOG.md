@@ -1,12 +1,12 @@
-# Journal de changements
+# Journal de changementsin.py
 
 ## Version 0.0.1
 
 **Message**:\
-🧊 Added a rotating cube!
+🎥 added a triangle and camera
 
 **Description**:\
-Ajout d'un cube qui tourne!
+Ajout d'un triangle et d'une caméra controllable
 
 **Changements** (.py uniquement):
 
@@ -14,17 +14,17 @@ Ajout d'un cube qui tourne!
 + src/main.py
 ```
 
-## Version 0.0.0
+## Version 0.0.0 (restart)
 
 **Message**:\
 ✨ first commit
 
 **Description**:\
-Fichier informatifs tel que `CHANGELOG.md`, `TODO.md` et `README.md`.\
+Ajout d'une fenêtre et de fichiers informatifs tel que `CHANGELOG.md`, `TODO.md` et `README.md`.\
 Ainsi que quelques assets.
 
 **Changements** (.py uniquement):
 
 ```diff
-Rien a voir ici 🔎
++ src/main.py
 ```
