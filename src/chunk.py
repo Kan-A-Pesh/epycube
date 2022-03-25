@@ -28,11 +28,11 @@ class Chunk:
 		for x in range(self.chunk_size[0]):
 			chunk_side = []
 
-			for z in range(self.chunk_size[2]):
+			for y in range(self.chunk_size[2]):
 				chunk_line = []
-				height = noise.get_block_height(x_origin + x, z_origin + z)
 				
-				for y in range(self.chunk_size[1]):
+				for z in range(self.chunk_size[1]):
+					height = noise.get_block_height(x_origin + x, z_origin + z)
 					block_id = 0 # Air
 					
 					if (y_origin + y > height):
