@@ -1,5 +1,20 @@
 # Journal de changements
 
+## Version 0.0.4
+
+**Message**:\
+`🏃‍♂️ added player controller`
+
+**Description**:\
+Ajout d'un contrôleur pour le joueur, il peut sauter, marcher et subir la gravité.
+
+**Changements** (.py uniquement):
+
+```diff
++ src/main.py
++ src/player.py
+```
+
 ## Version 0.0.3
 
 **Message**:\
