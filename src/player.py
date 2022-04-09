@@ -55,7 +55,7 @@ class FirstPersonController(Entity):
         feet_ray = raycast(self.position+Vec3(0,0.5,0), self.direction, ignore=(self,), distance=.5, debug=False)
         head_ray = raycast(self.position+Vec3(0,self.height-.1,0), self.direction, ignore=(self,), distance=.5, debug=False)
         if not feet_ray.hit and not head_ray.hit:
-            self.position += self.direction * self.speed * time.dt-
+            self.position += self.direction * self.speed * time.dt
 
 
         if self.gravity:

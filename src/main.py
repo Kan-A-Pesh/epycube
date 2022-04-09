@@ -23,7 +23,7 @@ for x in range(-3, 3):
 player = FirstPersonController(
 	y=20,
 	origin_y=-.5,
-	mouse_sensitivity = Vec2(20, 10),
+	mouse_sensitivity = Vec2(40, 40),
 	height=0.5,
 	min_cam_x=-80,
 	max_cam_x=80
